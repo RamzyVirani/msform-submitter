@@ -1,0 +1,26 @@
+{
+  "r27bdf79703bc438ba0eaadcab4dbd021": {
+    "type": "select",
+    "value": "Option 2"
+  },
+  "r88923a9701e44ea0a666816077c2d217": {
+    "type": "radio",
+    "value": "Option 3"
+  },
+  "r4b1b283af624485b842b66e4b6e4946f": {
+    "type": "radio",
+    "value": "Option 13"
+  },
+   "r879fac669ae2414da319802b91d2d9e4": {
+      "type": "checkbox",
+      "values": ["Option 3", "Option 2"]
+   },
+   "r1f08932e54154695a90c007d8c065b63": {
+      "type": "text",
+      "value": "Something here 2..."
+   },
+   "rd6c31ebdcd8a40dead66e353c6a4987e": {
+      "type": "textarea",
+      "value": "Long text here 2..."
+   }
+}

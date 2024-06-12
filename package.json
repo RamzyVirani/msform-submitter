@@ -1,0 +1,21 @@
+{
+  "name": "msform-submitter",
+  "version": "1.0.0",
+  "description": "Submit MS Form via puppeteer",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "msforms",
+    "forms.office.com",
+    "puppeteer"
+  ],
+  "author": "ramzy.rhv@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "puppeteer": "^22.10.1"
+  }
+}
