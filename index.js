@@ -100,11 +100,11 @@ const init = async (config) => {
         console.log('waiting for navigation in case login session is expired...');
         await page.waitForNavigation({timeout: 30000});
     } catch(e){
-        console.log('no navigation');
+        console.log('Did not navigate, proceeding with submit.');
     }
     await page.waitForNetworkIdle();
     if(page.url()===config.url){
-        await submit(page, config.questions, config.headless);
+        await submit(page, config.questions, config.receipt, config.headless);
     } else {
         if(config.headless && !config.headlessLogin) {
             console.log('======================================================');
@@ -113,7 +113,7 @@ const init = async (config) => {
             await browser.close();
         } else {
             await login(page, config);
-            await submit(page, config.questions, config.headless);
+            await submit(page, config.questions, config.receipt, config.headless);
         }
     }
     if(config.headless) {
